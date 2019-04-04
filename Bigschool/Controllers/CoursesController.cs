@@ -18,6 +18,7 @@ namespace Bigschool.Controllers
         }
         // GET: Courses
         [Authorize]
+        [HttpGet]
         public ActionResult Create()
         {
             var viewModel = new CourseViewModel
